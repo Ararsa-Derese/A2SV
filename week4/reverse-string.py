@@ -3,8 +3,11 @@ class Solution:
         """
         Do not return anything, modify s in-place instead.
         """
-        s.reverse()
-        
+        if len(s) < 1:
+             return
+        c = s.pop(0)
+        self.reverseString(s)
+        s.append(c)
          
 
 
